@@ -1,0 +1,132 @@
+body {
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background: #1e293b;
+  color: white;
+  padding-top: 20px;
+}
+
+.brand {
+  text-align: center;
+  color: #38bdf8;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.nav-item {
+  display: block;
+  color: #cbd5e1;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background: #334155;
+  color: #38bdf8;
+  border-left: 4px solid #38bdf8;
+  padding-left: 16px;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 25px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.stat-card {
+  padding: 18px 20px;
+  background: white;
+}
+
+.stat-card.success {
+  border-left: 4px solid #10b981;
+}
+
+.stat-card.info {
+  border-left: 4px solid #38bdf8;
+}
+
+.stat-card.primary {
+  border-left: 4px solid #2563eb;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.table-card {
+  background: white;
+}
+
+.table-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badge-type-1 { background-color: #10b981; color: white; }
+.badge-type-2 { background-color: #f59e0b; color: white; }
+.badge-type-3 { background-color: #ef4444; color: white; }
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btn-action {
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+}
